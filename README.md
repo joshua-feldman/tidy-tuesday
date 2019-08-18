@@ -1,1 +1,1 @@
-# tidy-tuesday
+# Tidy Tuesday
