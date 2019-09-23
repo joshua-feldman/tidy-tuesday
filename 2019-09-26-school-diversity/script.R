@@ -78,8 +78,8 @@ main_plot <- df %>%
   mutate(state.name = reorder(state.name, -`1994-1995`)) %>% 
   ggplot(aes(x=`1994-1995`, xend=`2016-2017`, y = state.name, group = state.name)) +
   geom_dumbbell(size = 1, color = cols[3], colour_xend = cols[6]) +
-  labs(title = "Ethnic diversity in United States schools: Comparing 1994-95 to 2016-17",
-       subtitle = "As measured by the Shannon index, ethnic diversity in schools increased in all US states from 1994-95 to\n2016-17. The largest change has been in Washington DC, where diversity has increased by 106%.",
+  labs(title = "Ethnic diversity in United States schools: Comparing 1994–95 to 2016–17",
+       subtitle = "As measured by the Shannon index, ethnic diversity in schools increased in all US states from 1994–95 to\n2016–17. The largest change has been in Washington DC, where diversity has increased by 106%.",
        x = "Ethnic diversity",
        y = "State",
        caption = "Graphic: Joshua Feldman") +
