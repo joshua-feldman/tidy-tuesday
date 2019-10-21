@@ -32,7 +32,7 @@ plot1 <- plot_spacy_reduced %>%
   geom_col() +
   coord_flip() +
   labs(title = '"PARANORMAL ACTIVITY": THE LANGUAGE OF HORROR',
-       subtitle = "The most common words used in the plot summaries of 3,328 horror films (2012-17). The top graph shows the most\ncommon unigrams (single words); the bottom graph shows the most common bigrams (pairs of words).",
+       subtitle = "The most common words used in the plot summaries of 3,328 horror films (2012–17). The top graph shows the most\ncommon unigrams (single words); the bottom graph shows the most common bigrams (pairs of words).",
        x = NULL,
        y = NULL) +
   facet_wrap(~pos, scales = "free") +
