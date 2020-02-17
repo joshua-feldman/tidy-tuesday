@@ -2,8 +2,6 @@ library(tidyverse)
 library(ggmap)
 library(cartogram)
 
-source("theme.R")
-
 df <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-18/food_consumption.csv')
 countries <- read_csv("~/tidy-tuesday/2020-02-18-foods-carbon-footprint/countries.csv")
 
@@ -49,9 +47,17 @@ ggplot() +
                             override.aes = list(size = 10, alpha = 1))) +
   labs(title = "The carbon footprint of the food industry",
        subtitle = "The map shows the most CO2-emitting food type in each country (measured in kg CO2/person/year). Bubbles are scaled by\nthe country's overall emission from food. When data is not available, the boundaries for that country are not shown.") +
-  theme(axis.title.x = element_blank(),
+  theme(axis.text =element_blank(),
+        axis.title.x = element_blank(),
         axis.title.y = element_blank(),
-        axis.text = element_blank(),
+        legend.background = element_rect(fill = "#4d4d4d", color = "#4d4d4d"),
+        legend.key = element_rect(fill = "#4d4d4d", color = "#4d4d4d"),
+        legend.title = element_text(face = "bold"),
+        legend.position = "bottom",
+        panel.background = element_rect(fill = "#4d4d4d", color = "#4d4d4d"),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
-        legend.position = "bottom")
+        plot.background = element_rect(fill = "#4d4d4d", color = "#4d4d4d"),
+        plot.title = element_text(face = "bold"),
+        strip.text = element_text(face = "bold"),
+        text = element_text(color = "white", family = "Raleway"))
