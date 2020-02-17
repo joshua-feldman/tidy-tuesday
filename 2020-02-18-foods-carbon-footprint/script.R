@@ -5,7 +5,7 @@ library(cartogram)
 source("theme.R")
 
 df <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-18/food_consumption.csv')
-countries <- read_csv("~/Desktop/countries.csv")
+countries <- read_csv("~/tidy-tuesday/2020-02-18-foods-carbon-footprint/countries.csv")
 
 df_top <- df %>% 
   group_by(country) %>% 
@@ -47,8 +47,8 @@ ggplot() +
   guides(size = FALSE,
          col = guide_legend(title = "Food type with highest Co2 emissions",
                             override.aes = list(size = 10, alpha = 1))) +
-  labs(title = "Carbon dioxide emissions from the food industry",
-       subtitle = "The map shows the most CO2-emitting food type in each country (measured in kg CO2/person/year). Bubbles are scaled\nby the country's overall emission from food. When data is not available, the boundaries for that country are not shown.") +
+  labs(title = "The carbon footprint of the food industry",
+       subtitle = "The map shows the most CO2-emitting food type in each country (measured in kg CO2/person/year). Bubbles are scaled by\nthe country's overall emission from food. When data is not available, the boundaries for that country are not shown.") +
   theme(axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         axis.text = element_blank(),
