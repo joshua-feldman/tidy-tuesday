@@ -1,6 +1,4 @@
 library(tidyverse)
-library(ggmap)
-library(cartogram)
 
 df <- read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-02-18/food_consumption.csv')
 countries <- read_csv("~/tidy-tuesday/2020-02-18-foods-carbon-footprint/countries.csv")
