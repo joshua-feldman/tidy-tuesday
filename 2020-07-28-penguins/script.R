@@ -7,6 +7,8 @@ library(ggtext)
 
 penguin_theme <- theme(
   panel.background = element_rect(fill = "#fffafa", color = "#fffafa"),
+  panel.grid.major = element_line(color = "#fffafa"),
+  panel.grid.minor = element_line(color = "#fffafa"),
   plot.background = element_rect(fill = "#fffafa", color = "#fffafa"),
   plot.title = element_text(hjust = 0.5),
   text = element_text(family = "Iceberg"))
