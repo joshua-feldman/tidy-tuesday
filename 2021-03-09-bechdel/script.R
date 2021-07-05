@@ -1,4 +1,5 @@
 library(tidyverse)
+library(ggtext)
 
 setwd("~/tidy-tuesday/2021-03-09-bechdel")
 
