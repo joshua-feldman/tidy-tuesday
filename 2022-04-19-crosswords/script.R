@@ -66,8 +66,8 @@ p <- df_ordered %>%
   geom_text(color = "black", fontface = "bold", family = "Nanum Gothic", size = 10) +
   scale_y_reverse() +
   annotate("text", size = 14, label = "THE 20 MOST COMMON WORDS", x = 9.5, y = 13, color = "white", family = "Gentium Book Basic", fontface = "bold") +
-  annotate("text", size = 9.5, label = "IN THE NEW YORK TIMES CROSSWORD PUZZLE",  x = 9.5, y = 13.6, color = "white", family = "Gentium Book Basic") +
-  annotate("text", size = 8, label = "The clues below are samples from previous crosswords", fontface = "italic", x = 9.5, y = 14.3, color = "white", family = "Gentium Book Basic") +
+  annotate("text", size = 12, label = "IN THE TIMES CROSSWORD PUZZLE",  x = 9.5, y = 13.6, color = "white", family = "Gentium Book Basic") +
+  annotate("text", size = 7, label = "The clues below are samples from previous crosswords", fontface = "italic", x = 9.5, y = 14.3, color = "white", family = "Gentium Book Basic") +
   annotate("text", size = 6, label = "Graphic: Joshua Feldman", x = 9.5, y = 15, color = "white", family = "Gentium Book Basic") +
   annotate("text", label = "1", x = 5 - num_nudge, y = 1 - num_nudge, size = num_size, fontface = "bold") +
   annotate("text", label = "2", x = 7 - num_nudge, y = 1 - num_nudge, size = num_size, fontface = "bold") +
